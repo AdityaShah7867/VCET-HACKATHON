@@ -474,7 +474,7 @@ svg text {
 
 /*===========>Sponosrs Card Ends<===================*/
 
-/* .aboutImg {
+/* .sImg {
   position: relative;
   background-color: var(--primary_black);
   overflow: hidden;
@@ -1062,6 +1062,7 @@ svg text {
   }
 }
 
+
 /*===========>Timeline Start<===================*/
 
 .Yearly-timeline:after {
@@ -1183,6 +1184,8 @@ svg text {
 
 /*===========>FAQ Start<===================*/
 
+/* Updated CSS for Accordion */
+
 .FAQ {
   color: white;
   padding: 2rem;
@@ -1196,15 +1199,14 @@ svg text {
   border: none;
   box-shadow: none;
   color: white;
-  padding: 1rem;
   margin-top: 3rem;
   margin-bottom: 1rem;
 }
 
 .accordion-item {
-  background-color: var(--primary_whitCyan) !important;
+  background-color: var(--primary_darkBack) !important;
   color: black;
- 
+  position: relative; 
 }
 
 .accordion-button {
@@ -1230,6 +1232,16 @@ svg text {
 .accordion-button:not(.collapsed):focus {
   border-bottom: solid black 0.5px;
 }
+
+
+.accordion-collapse {
+  position: relative; 
+  background-color: #08a79d;
+  opacity: 1; 
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 
 /*===========>FAQ End<===================*/
 
@@ -1512,6 +1524,7 @@ svg text {
     flex-direction: column;
     gap: 1rem;
   }
+
 }
 
 @media (max-width: 700px) {
@@ -1528,6 +1541,8 @@ svg text {
   .footer-container .quick_links {
     margin-top: 1rem;
   }
+
+  
 }
 
 @media (max-width: 600px) {
@@ -1537,6 +1552,8 @@ svg text {
   .footer-container .follow {
     margin-left: 0px;
   }
+
+
 }
 
 /* =============Footer css ends ================ */
@@ -1547,6 +1564,7 @@ svg text {
   position: relative;
   padding: 50px;
   margin-top: 10px;
+  
 }
 
 .contacts {
@@ -1557,6 +1575,7 @@ svg text {
   align-items: center;
   text-align: center;
 }
+
 .contact .title {
   margin-top: 10px;
 }
@@ -1572,7 +1591,6 @@ svg text {
 
 .contact-container2 .box2 {
   flex: 1 1 calc(33.33% - 1rem);
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1591,6 +1609,7 @@ svg text {
 
 .contact-container2 .box2 .content2 ul {
   padding-left: 0;
+
 }
 
 .contact-container2 .box2 .content2 .social2_icon {
@@ -1630,8 +1649,8 @@ svg text {
 }
 
 .contact-container2 .map .content2 iframe {
-  height: 100%;
-  width: 100vh;
+  height: 120%;
+  width: 120vh;
   border: 0;
 }
 
@@ -1663,6 +1682,7 @@ svg text {
 .contact-container2 .box2 .add ul li svg {
   color: var(--primary_whitCyan);
   font-size: 30px;
+  margin-right: 10px; /* Added margin to address logo */
 }
 
 .contact-container2 .box2 .add ul li a {
@@ -1700,6 +1720,10 @@ svg text {
     padding: 20px;
   }
 
+  .contact-container2 .box2 {
+    flex: 1 1 100%;
+  }
+  
 }
 
 /* =============Contact css ends ================ */
