@@ -1,0 +1,9 @@
+.abb{
+    height: 300px;
+}
+
+@media (max-width: 768px) {
+    .abb{
+        height: 450px;
+    }
+}
