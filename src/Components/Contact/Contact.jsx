@@ -57,37 +57,26 @@ const Contact = () => {
             ))}
           </div>
         </div>
-    {/* <div className="box2">
-          <h2>Lets get in touch!</h2>
-          <div className="content2 social2">
-            <ul className="social2_icon">
-              {contactData.socialLinks.map((link, index) => (
-                <li key={index}>
-                  <a href={link.link} target="_blank" rel="noopener noreferrer">
-                    <link.icon />
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>  */}
+
       <div className="box2 address">
           <div className="content2 add">
             <ul>
               <li >
-                <LocationOn  />
-                <span className='locspan'><a href="">{contactData.address.location}</a></span>
+                <div style={{marginBottom:'40px'}}>
+                <LocationOn/>
+                </div>
+                <span ><a>{contactData.address.location}</a></span>
               </li>
               <li>
-                <Phone />
+                <Phone/>
                 <span><a href={`tel:${contactData.address.phone}`}>{contactData.address.phone}</a></span>
               </li>
               <li>
-                <Email />
+                <Email/>
                 <span><a href={`mailto:${contactData.address.email}`} target="_blank" rel="noopener noreferrer">{contactData.address.email}</a></span>
               </li>
               <li>
-                <Web />
+                <Web/>
                 <span><a href={contactData.address.website} target="_blank" rel="noopener noreferrer">{contactData.address.website}</a></span>
               </li>
             </ul>
